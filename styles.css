@@ -1,0 +1,78 @@
+:root {
+    --black: #260621;
+    --beige: #D9BDAD;
+    --dbeige: #BF907E;
+    --brown: #734743;
+    --dblack: #260101;
+}
+body {
+    margin: 0 auto;
+    font-family: Raleway, sans-serif;
+}
+/* TYPOGRAPHY */
+body * {
+  margin: 0;  
+  
+}
+h1{
+    font-family: Homemade Apple, sans-serif;
+    font-size: 3rem;
+}
+.logo-sub {
+    font-size: .75rem;
+}
+/* LAYOUT */
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+nav {
+    
+    font-size: 1.5rem;
+}
+/* LOGO */
+.logo {
+    position: relative;
+}
+.logo-sub{
+    position: absolute;
+    color: var(--brown);
+}
+.logo-sub-first {
+    position: absolute;
+    width: 10em;
+    top: -2.5em;
+    left: .25em;
+    text-align: center;
+}
+.logo-sub-second{
+    position: absolute;
+    width: 10em;
+    top: -2em;
+    left: 12em;
+    
+}
+/* NAVIGATION */
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 2em 0;
+}
+nav li {
+    padding: .5em;
+}
+nav a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--brown);
+}
