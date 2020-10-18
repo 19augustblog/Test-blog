@@ -1,5 +1,6 @@
 :root {
     --black: #260621;
+    --grey:  #858385;
     --beige: #D9BDAD;
     --dbeige: #BF907E;
     --brown: #734743;
@@ -12,14 +13,23 @@ body {
 /* TYPOGRAPHY */
 body * {
   margin: 0;  
-  
 }
 h1{
     font-family: Homemade Apple, sans-serif;
     font-size: 3rem;
 }
+h2 {
+    font-family: reenie beanie;
+    font-size: 2rem;
+    margin-bottom: 1.5em;
+}
 .logo-sub {
     font-size: .75rem;
+    color: var(--brown);
+}
+nav {
+    font-family: reenie beanie;
+    font-size: 1.5rem;
 }
 /* LAYOUT */
 .container {
@@ -29,9 +39,66 @@ h1{
     flex-direction: column;
     align-items: center;
 } 
-nav {
-    font-family: reenie beanie;
-    font-size: 1.5rem;
+.banner {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin: 1em 0 3em;
+}
+.posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.post {
+    width: 70%;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+.post-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.post-info {
+    font-family: montserrat, sans-serif;
+    font-size: .75rem;
+    margin: .5em 0;
+    color: var(--dbeige)
+}
+.post-title {
+    font-size: 1rem;
+    color: var(--dblack);
+}
+.post-body {
+    font-size: .75rem;
+    color: var(--grey);
+    margin: .5em 0;
+}
+.post-read-more {
+    font-size: .75rem;
+    color: var(--beige);
+}
+.post-read-more:hover,
+.post-read-more:focus {
+    color: var(--brown)
+}
+@media (min-width: 600px) {
+    .posts{
+        flex-flow: row wrap;
+        justify-content:  center;
+    }
+    .post {
+        width: 25%;
+        height: 30em;
+        /* border: 1px magenta solid; */
+        margin: 1em;
+    }
+}
+@media (min-width: 950px) {
+    .post {
+        height: 25em;
+    }
 }
 /* LOGO */
 .logo {
@@ -39,7 +106,6 @@ nav {
 }
 .logo-sub{
     position: absolute;
-    color: var(--brown);
 }
 .logo-sub-first {
     position: absolute;
@@ -63,36 +129,29 @@ nav ul {
     align-items: center;
     list-style: none;
     padding: 0;
-    margin: 2em 0;
+    margin: 2em 0 1em;
 }
 nav li {
     padding: .5em;
 }
 nav a {
-    color: var(--black);
+    color: var(--dbeige);
     text-decoration: none;
-    padding: .2em .5em;
+    padding: 0 .25em;
 }
 
 nav a:hover,
 nav a:focus {
-    color: var(--brown);
-    background-color: #D9BDAD;
+    color: var(--black);
     opacity: 0.6;   
 }
 
 .current-page {
-    border-bottom: 2px solid var(--brown);
+    border-bottom: 1px solid var(--brown);
 }
 @media (min-width: 600px) {
     nav ul{
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
     }
-    nav li {
-        padding: 1em;
-        width: 3em;
-    }
-
-    
 }
