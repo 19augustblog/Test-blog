@@ -20,6 +20,11 @@ h1{
 }
 .logo-sub {
     font-size: .75rem;
+    color: var(--brown);
+}
+nav {
+    font-family: reenie beanie;
+    font-size: 1.5rem;
 }
 /* LAYOUT */
 .container {
@@ -29,17 +34,13 @@ h1{
     flex-direction: column;
     align-items: center;
 } 
-nav {
-    font-family: reenie beanie;
-    font-size: 1.5rem;
-}
+
 /* LOGO */
 .logo {
     position: relative;
 }
 .logo-sub{
     position: absolute;
-    color: var(--brown);
 }
 .logo-sub-first {
     position: absolute;
@@ -69,30 +70,24 @@ nav li {
     padding: .5em;
 }
 nav a {
-    color: var(--black);
+    color: var(--dbeige);
     text-decoration: none;
-    padding: .2em .5em;
+    padding: 0 .25em;
 }
 
 nav a:hover,
 nav a:focus {
-    color: var(--brown);
-    background-color: #D9BDAD;
+    color: var(--black);
+    font-weight: bold;
     opacity: 0.6;   
 }
 
 .current-page {
-    border-bottom: 2px solid var(--brown);
+    border-bottom: 1px solid var(--brown);
 }
 @media (min-width: 600px) {
     nav ul{
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
     }
-    nav li {
-        padding: 1em;
-        width: 3em;
-    }
-
-    
 }
