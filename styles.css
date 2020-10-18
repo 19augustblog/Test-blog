@@ -30,7 +30,7 @@ h1{
     align-items: center;
 } 
 nav {
-    
+    font-family: reenie beanie;
     font-size: 1.5rem;
 }
 /* LOGO */
@@ -51,6 +51,7 @@ nav {
 .logo-sub-second{
     position: absolute;
     width: 10em;
+    text-align: center;
     top: -2em;
     left: 12em;
     
@@ -70,9 +71,28 @@ nav li {
 nav a {
     color: var(--black);
     text-decoration: none;
+    padding: .2em .5em;
 }
 
 nav a:hover,
 nav a:focus {
     color: var(--brown);
+    background-color: #D9BDAD;
+    opacity: 0.6;   
+}
+
+.current-page {
+    border-bottom: 2px solid var(--brown);
+}
+@media (min-width: 600px) {
+    nav ul{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    nav li {
+        padding: 1em;
+        width: 3em;
+    }
+
+    
 }
