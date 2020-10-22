@@ -143,11 +143,14 @@ nav a:focus {
 }
 .post-body {
     font-size: .75rem;
+    line-height: 1.6;
     color: var(--grey);
     margin: .5em 0;
 }
 .post-read-more {
     font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     color: var(--beige);
 }
 .post-read-more:hover,
