@@ -115,6 +115,10 @@ nav a:focus {
 .current-page {
     border-bottom: 2px solid var(--brown);
 }
+.nav {
+    border-top: 1px solid var(--dbeige);
+    border-bottom:  1px solid var(--dbeige);
+}
 @media (min-width: 650px) {
     nav li{
         margin: 0 1em;
@@ -186,4 +190,9 @@ nav a:focus {
     .post {
         min-height: 25em;
     }
+}
+
+/* ARTICLES */
+.article {
+    text-align: justify;
 }
