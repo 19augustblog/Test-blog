@@ -91,11 +91,11 @@ footer p {
 /* NAVIGATION */
 nav ul {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
     list-style: none;
     padding: 0;
-    margin: 2em 0 1em;
+    margin-top: 2.5em;
 }
 nav li {
     padding: .5em;
@@ -115,12 +115,19 @@ nav a:focus {
 .current-page {
     border-bottom: 1px solid var(--brown);
 }
-@media (min-width: 600px) {
-    nav ul{
-        flex-direction: row;
-        justify-content: space-between;
+@media (min-width: 650px) {
+    nav li{
+        margin: 0 1em;
     }
 }
+
+@media (max-width: 400px) {
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 /* POSTS */
 .posts {
     display: flex;
