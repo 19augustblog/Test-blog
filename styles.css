@@ -113,7 +113,7 @@ nav a:focus {
 }
 
 .current-page {
-    border-bottom: 1px solid var(--brown);
+    border-bottom: 2px solid var(--brown);
 }
 @media (min-width: 650px) {
     nav li{
