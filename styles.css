@@ -6,9 +6,13 @@
     --brown: #734743;
     --dblack: #260101;
 }
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0 auto;
     font-family: Raleway, sans-serif;
+    text-align: center;
 }
 /* TYPOGRAPHY */
 body * {
@@ -31,24 +35,9 @@ nav {
     font-family: reenie beanie;
     font-size: 1.5rem;
 }
-/* LAYOUT */
-.container {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} 
-.banner {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    margin: 1em 0 3em;
-}
 footer {
     background-color: var(--beige);
     padding: 1.5em;
-    text-align: center;
     line-height: 2em;
 }
 .footer-blog-name {
@@ -60,6 +49,23 @@ footer p {
     font-size: .75rem;
     color: var(--grey);
 }
+/* LAYOUT */
+.container {
+    width: 90%;
+    margin: auto;
+}
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+.banner {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin: 1em 0 3em;
+}
+
 /* LOGO */
 .logo {
     position: relative;
@@ -120,11 +126,13 @@ nav a:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px solid green;
 }
 .post {
     width: 70%;
     margin-bottom: 1.5em;
     text-align: center;
+    background-color: pink;
 }
 .post-image {
     width: 100%;
@@ -164,7 +172,7 @@ nav a:focus {
     }
     .post {
         width: 25%;
-        height: 30em;
+        min-height: 30em;
         /* border: 1px magenta solid; */
         margin: 1em;
     }
