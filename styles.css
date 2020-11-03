@@ -11,19 +11,19 @@
 }
 body {
     margin: 0 auto;
-    font-family: Raleway, sans-serif;
-    text-align: center;
+    font-family: 'Raleway', sans-serif;
+
 }
 /* TYPOGRAPHY */
 body * {
   margin: 0;  
 }
 h1{
-    font-family: Homemade Apple, sans-serif;
+    font-family: 'Homemade Apple', sans-serif;
     font-size: 3rem;
 }
 h2 {
-    font-family: reenie beanie;
+    font-family: 'reenie beanie', cursive;
     font-size: 2rem;
     margin-bottom: 1.5em;
 }
@@ -32,7 +32,7 @@ h2 {
     color: var(--brown);
 }
 nav {
-    font-family: reenie beanie;
+    font-family: 'reenie beanie', cursive;
     font-size: 1.5rem;
 }
 footer {
@@ -194,5 +194,42 @@ nav a:focus {
 
 /* ARTICLES */
 .article {
-    text-align: justify;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8rem;
+}
+.article-tag {
+    font-family:'Podkova', serif; 
+    font-size: 1.25rem;
+    margin-top: 2em;
+    color: var(--brown)
+}
+.article-banner {
+    width: 100%;
+    padding: 200px 10px 50px;
+    background-image: url(../images/article/Tshirt/banner.jpg);
+    background-position: center;
+    margin: 2em 0;
+}
+.article-title {
+    font-family:'Playfair Display SC', serif;
+    font-size: 2rem; 
+    max-width: 250px;
+    background: var(--beige);
+    color: white;
+    padding-left: 10px;
+}
+
+@media (min-width: 600px) {
+    .article-banner{
+        padding-left: 100px;
+    }
+    .article-title {
+        font-size: 3rem;
+        max-width: 400px;
+    }
+}
+
+.article-intro {
+    
 }
