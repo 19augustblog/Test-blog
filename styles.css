@@ -11,19 +11,19 @@
 }
 body {
     margin: 0 auto;
-    font-family: Raleway, sans-serif;
-    text-align: center;
+    font-family: 'Raleway', sans-serif;
+
 }
 /* TYPOGRAPHY */
 body * {
   margin: 0;  
 }
 h1{
-    font-family: Homemade Apple, sans-serif;
+    font-family: 'Homemade Apple', sans-serif;
     font-size: 3rem;
 }
 h2 {
-    font-family: reenie beanie;
+    font-family: 'reenie beanie', cursive;
     font-size: 2rem;
     margin-bottom: 1.5em;
 }
@@ -32,7 +32,7 @@ h2 {
     color: var(--brown);
 }
 nav {
-    font-family: reenie beanie;
+    font-family: 'reenie beanie', cursive;
     font-size: 1.5rem;
 }
 footer {
@@ -91,11 +91,11 @@ footer p {
 /* NAVIGATION */
 nav ul {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
     list-style: none;
     padding: 0;
-    margin: 2em 0 1em;
+    margin-top: 2.5em;
 }
 nav li {
     padding: .5em;
@@ -113,14 +113,25 @@ nav a:focus {
 }
 
 .current-page {
-    border-bottom: 1px solid var(--brown);
+    border-bottom: 2px solid var(--brown);
 }
-@media (min-width: 600px) {
-    nav ul{
-        flex-direction: row;
-        justify-content: space-between;
+.nav {
+    border-top: 1px solid var(--dbeige);
+    border-bottom:  1px solid var(--dbeige);
+}
+@media (min-width: 650px) {
+    nav li{
+        margin: 0 1em;
     }
 }
+
+@media (max-width: 400px) {
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 /* POSTS */
 .posts {
     display: flex;
@@ -179,4 +190,46 @@ nav a:focus {
     .post {
         min-height: 25em;
     }
+}
+
+/* ARTICLES */
+.article {
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8rem;
+}
+.article-tag {
+    font-family:'Podkova', serif; 
+    font-size: 1.25rem;
+    margin-top: 2em;
+    color: var(--brown)
+}
+.article-banner {
+    width: 100%;
+    padding: 200px 10px 50px;
+    background-image: url(../images/article/Tshirt/banner.jpg);
+    background-position: center;
+    margin: 2em 0;
+}
+.article-title {
+    font-family:'Playfair Display SC', serif;
+    font-size: 2rem; 
+    max-width: 250px;
+    background: var(--beige);
+    color: white;
+    padding-left: 10px;
+}
+
+@media (min-width: 600px) {
+    .article-banner{
+        padding-left: 100px;
+    }
+    .article-title {
+        font-size: 3rem;
+        max-width: 400px;
+    }
+}
+
+.article-intro {
+    
 }
