@@ -1,3 +1,12 @@
+/* font-size: 
+Raleway (body),
+Homemade Apple (logo), 
+Reenie&Beanie (nav),
+Montserrat (post info), 
+Playfair Display SC (article title)
+Podkova (article tag), 
+Open Sans (article content) */
+
 :root {
     --black: #260621;
     --grey:  #858385;
@@ -41,7 +50,7 @@ footer {
     line-height: 2em;
 }
 .footer-blog-name {
-    font-family: Homemade Apple, sans-serif;
+    font-family: 'Homemade Apple', sans-serif;
     font-size: 1.25rem;
     color: var(--black);
 }
@@ -149,7 +158,7 @@ nav a:focus {
     object-fit: cover;
 }
 .post-info {
-    font-family: montserrat, sans-serif;
+    font-family: 'montserrat', sans-serif;
     font-size: .6rem;
     margin: .5em 0;
     color: var(--dbeige)
@@ -194,9 +203,8 @@ nav a:focus {
 
 /* ARTICLES */
 .article {
-    text-align: left;
     font-family: 'Open Sans', sans-serif;
-    font-size: .8rem;
+    font-size: .9rem;
 }
 .article-tag {
     font-family:'Podkova', serif; 
@@ -220,6 +228,12 @@ nav a:focus {
     padding-left: 10px;
 }
 
+.article-intro {
+    font-style: italic;
+    font-size: 1rem;
+    margin: 0 auto 2em;
+    max-width: 80%;
+}
 @media (min-width: 600px) {
     .article-banner{
         padding-left: 100px;
@@ -228,8 +242,51 @@ nav a:focus {
         font-size: 3rem;
         max-width: 400px;
     }
+    .article-intro,
+    .article-section{
+        max-width: 70%;
+        margin: auto;
+    }
 }
 
-.article-intro {
-    
+.article-section {
+    margin: 2em auto;
+    width: 80%;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.article-sub {
+    font-family: 'montserrat', sans-serif;
+    font-size: 1.25rem;
+    text-align: left;
+    margin-bottom: .5em;
+    color: var(--brown);
+    border-bottom: 5px dotted var(--beige);
+}
+.article-image {
+    display: block;
+    width: 80%;
+    margin: 1em auto;
+    object-fit: cover;
+}
+.two-columns-image {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+}
+.two-columns-image * {
+    margin: 1em;
+    width: 40%;
+}
+@media (min-width: 600px) {
+    .article-image {
+        width: 50%;
+    }
+    .two-columns-image{
+        height: 300px;
+    }
+    .two-columns-image * {
+        width: 45%;
+    }
 }
