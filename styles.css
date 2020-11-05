@@ -191,12 +191,28 @@ nav a:focus {
 }
 /* IVIDUAL PAGE - PREVIEW POSTS */
 .article-previews{
+    margin-top: 3em;
     display: flex;
-
+    flex-direction: column;
+}
+.article-preview{
+    width: 80%;
+    margin: 1em auto;
+    text-align: center;
 }
 .preview-image {
-    width: 30px;
+    width: 100%;
+    height: 200px;
     object-fit: cover;
+}
+@media (min-width: 600px) {
+    .article-previews{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .article-preview {
+        width: 40%;
+    }
 }
 /* ARTICLES */
 .article {
@@ -224,7 +240,6 @@ nav a:focus {
     color: white;
     padding-left: 10px;
 }
-
 .article-intro {
     font-style: italic;
     font-size: 1rem;
